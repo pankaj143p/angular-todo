@@ -20,6 +20,6 @@ export class AppComponent {
       
   }
   deleteTask(id:number){
-   this.taskList=this.taskList.filter(this.taskList.id!=id)
+   this.taskList=this.taskList.filter((it)=>it.id!=id);
   }
 }
