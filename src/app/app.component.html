@@ -1,0 +1,12 @@
+<h1>Todo List</h1>
+<label>Task</label>
+<input type="text" [(ngModel)]="name" placeholder="Type Your Task" required="true"/>
+<h1>{{this.name}}</h1>
+<button (click)="addTask()">Add Task</button>
+
+<ul *ngFor="let task of taskList">
+  <li>{{task.id}}</li>
+  <li>{{task.name}}</li>
+</ul>
+
+<h1>{{name}}</h1>
